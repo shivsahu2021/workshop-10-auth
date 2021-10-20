@@ -1,0 +1,31 @@
+GET http://localhost:4000/posts
+Authorization: Bearer
+1fab8c687a9f53149938678a3ae1a8d75ad51333b7479e2857d7d19d571cebb710bbd1835b56054b62e388724e881082c43ee6df9df7e336273ac91eee9ac6c8
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "token": 
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+
+"token": "1fab8c687a9f53149938678a3ae1a8d75ad51333b7479e2857d7d19d571cebb710bbd1835b56054b62e388724e881082c43ee6df9df7e336273ac91eee9ac6c8"
+
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "shiv"
+}
